@@ -125,7 +125,7 @@ if(isset($_POST['submit']))
       </div>
     </div>
   </header>
-  <section class="model-area section-gap" id="cars">
+  <section class="model-area section-gap" id="cars" style="background:url(img/5234064.jpg)">
 
     <div class="container">
       <div class="row">
@@ -408,11 +408,11 @@ if(isset($_POST['submit']))
             </div>
             
             <div class="from-group">
-              <input class="form-control txt-field" type="text" name="name" placeholder="Your name" required>
               <input class="form-control txt-field" type="email" name="email" placeholder="Email address" required>
-              <input class="form-control txt-field" type="tel" name="phone_number" placeholder="Phone number(Include Country Code)" required>
+              <input class="form-control txt-field" type="text" name="name" placeholder="Your name" required disabled>              
+              <input class="form-control txt-field" type="tel" name="phone_number" placeholder="Phone number(Include Country Code)" disabled>
               <input class="form-control txt-field" type="text" name="hotel" placeholder="Hotel(Where are you staying?)" required>
-              <input class="form-control txt-field" type="text" name="profession" placeholder="Nationality" required>
+              <input class="form-control txt-field" type="text" name="profession" placeholder="Nationality" required disabled>
             </div>
             <div class="form-group row">
               <div class="col-md-12">
