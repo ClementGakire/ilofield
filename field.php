@@ -156,7 +156,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" onclick="pickchoice('Pink Mango')" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/pinkmango.png" alt="">
@@ -179,7 +179,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" onclick="pickchoice('Muhanga ICPC')" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/icpcmuhanga.png" alt="">
@@ -221,7 +221,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" onclick="pickchoice('IPRC Tumba')" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/iprc.png" alt="">
@@ -245,7 +245,7 @@ if(isset($_POST['submit']))
 
             </p>
            
-            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" onclick="pickchoice('Ampersand in Kigali')" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/ampersand.png" alt="">
@@ -265,7 +265,7 @@ if(isset($_POST['submit']))
             -Number of people the area can receive: 300<br>
             -Accessibility: Easy (Only 6 Km from Musanze city)
             </p>
-            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" onclick="pickchoice('Kinigi IDP Model Village')" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/idp.png" alt="">
@@ -287,7 +287,7 @@ if(isset($_POST['submit']))
             -Accessibility: Complicated somehow
 
             </p>
-            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" onclick="pickchoice('Green Gicumbi')" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/greengicumbi.png" alt="">
@@ -305,7 +305,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" onclick="pickchoice('Gisozi Genocide Museum')" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/gisozigenocidememorial.png" alt="">
@@ -341,7 +341,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn"  href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/nyandungu.png" alt="">
@@ -458,6 +458,11 @@ if(isset($_POST['submit']))
     }
     gtag('js', new Date());
     gtag('config', 'UA-23581568-13');
+
+    function pickchoice(choice) {
+      document.getElementById("select-element").value = choice;
+    }
+
   </script>
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7c61f86589599cb4","version":"2023.4.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}' crossorigin="anonymous"></script>
 </body>
