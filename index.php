@@ -133,6 +133,8 @@ if(isset($_POST['submit']))
           </h1>
           <a href="field.php" class="primary-btn text-uppercase">Field Trip</a>
           <a href="side-event.php" class="primary-btn-side text-uppercase">Side Event</a>
+          <a href="img/program.pdf" download="program.pdf" class="primary-btn-side text-uppercase m-2">Download Program</a>
+
         </div>
       </div>
     </div>

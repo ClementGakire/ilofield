@@ -1845,7 +1845,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 763px) {
   .banner-content h6, .banner-content p, .banner-content a {
-    margin-top: 50% auto;
+    margin-top: 5px;
   }
   .banner-content h1 {
     text-align: center;
