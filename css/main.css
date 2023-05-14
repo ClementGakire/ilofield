@@ -1747,10 +1747,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-home {
   background: url(../img/bg-home.jpg) center;
   background-size: cover;
+  height: 87vh;
 }
 
 .banner-home .overlay-bg {
   /* background-color: rgba(0, 0, 0, 0.8); */
+
   background: rgba(35, 62, 149, 0.4) !important;
 }
 
@@ -1815,11 +1817,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 763px) {
   .banner-content h6, .banner-content p, .banner-content a {
-    display: none;
+    margin-top: 50% auto;
   }
   .banner-content h1 {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 50%;
     display: block !important;
   }
 }
