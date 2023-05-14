@@ -50,13 +50,6 @@ $(document).ready(function(){
     speed: 400
   });
 
-
-    $( function() {
-        $( "#datepicker" ).datepicker();
-        $( "#datepicker2" ).datepicker();
-     });
-  
-
   // Mobile Navigation
   if ($('#nav-menu-container').length) {
     var $mobile_nav = $('#nav-menu-container').clone().prop({
