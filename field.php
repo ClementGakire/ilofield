@@ -172,7 +172,7 @@ if(isset($_POST['submit']))
             <button class="text-uppercase primary-btn" onclick="pickchoice('Pink Mango', 20)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid" src="img/pinkmango.png" alt="">
+            <img class="img-fluid field-img" src="img/pinkmango.png" alt="">
           </div>
         </div>
         <div class="row align-items-center single-model item">
@@ -195,7 +195,7 @@ if(isset($_POST['submit']))
             <button class="text-uppercase primary-btn" onclick="pickchoice('Muhanga ICPC', 100)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid" src="img/icpcmuhanga.png" alt="">
+            <img class="img-fluid field-img" src="img/icpcmuhanga.png" alt="">
           </div>
         </div>
         <div class="row align-items-center single-model item">
@@ -219,7 +219,7 @@ if(isset($_POST['submit']))
             <button onclick="pickchoice('Center of Excellence: Rwanda Coding Academy', 200)" class="text-uppercase primary-btn" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid" src="img/rwandacodingacademy.png" alt="">
+            <img class="img-fluid field-img" src="img/rwandacodingacademy.png" alt="">
           </div>
         </div>
         <div class="row align-items-center single-model item">
@@ -237,7 +237,7 @@ if(isset($_POST['submit']))
             <button class="text-uppercase primary-btn" onclick="pickchoice('IPRC Tumba', 150)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid" src="img/iprc.png" alt="">
+            <img class="img-fluid field-img" src="img/iprc.png" alt="">
           </div>
         </div>
         <div class="row align-items-center single-model item">
@@ -260,7 +260,7 @@ if(isset($_POST['submit']))
            
             <button class="text-uppercase primary-btn" onclick="pickchoice('Ampersand in Kigali', 30)" href="#home">Book a Slot Now</button>
           </div>
-          <div class="col-lg-6 model-right">
+          <div class="col-lg-6 model-right" field-img>
             <img class="img-fluid" src="img/ampersand.png" alt="">
           </div>
         </div>
@@ -281,7 +281,7 @@ if(isset($_POST['submit']))
             <button class="text-uppercase primary-btn" onclick="pickchoice('Kinigi IDP Model Village', 200)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid" src="img/idp.png" alt="">
+            <img class="img-fluid field-img" src="img/idp.png" alt="">
           </div>
         </div>
         <div class="row align-items-center single-model item">
@@ -303,7 +303,7 @@ if(isset($_POST['submit']))
             <button class="text-uppercase primary-btn" onclick="pickchoice('Green Gicumbi', 60)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid" src="img/greengicumbi.png" alt="">
+            <img class="img-fluid field-img" src="img/greengicumbi.png" alt="">
           </div>
         </div>
         <div class="row align-items-center single-model item">
@@ -321,7 +321,7 @@ if(isset($_POST['submit']))
             <button class="text-uppercase primary-btn" onclick="pickchoice('Gisozi Genocide Museum', 20)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid" src="img/gisozigenocidememorial.png" alt="">
+            <img class="img-fluid field-img" src="img/gisozigenocidememorial.png" alt="">
           </div>
         </div>
         <div class="row align-items-center single-model item">
@@ -339,7 +339,7 @@ if(isset($_POST['submit']))
             <button class="text-uppercase primary-btn" onclick="pickchoice('Kigali City Tour', 20)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid" src="img/kigali.jpeg" alt="">
+            <img class="img-fluid field-img" src="img/kigali.jpeg" alt="">
           </div>
         </div>
         <div class="row align-items-center single-model item">
@@ -357,7 +357,7 @@ if(isset($_POST['submit']))
             <button class="text-uppercase primary-btn" onclick="pickchoice('Nyandungu Urban Waterland Eco-tourism park', 20)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid" src="img/nyandungu.png" alt="">
+            <img class="img-fluid field-img" src="img/nyandungu.png" alt="">
           </div>
         </div>
         <div class="row align-items-center single-model item">
@@ -375,7 +375,7 @@ if(isset($_POST['submit']))
             <button id="book-now" class="text-uppercase primary-btn" onclick="pickchoice('Conference Infrastructure (KCC & BK Arena)', 20)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
-            <img class="img-fluid" src="img/kcc.png" alt="">
+            <img class="img-fluid field-img" src="img/kcc.png" alt="">
           </div>
         </div>
         

@@ -171,6 +171,7 @@ $(document).ready(function(){
         dots: true,
         nav: true,
         navText: ['<i class="fa fa-angle-left fa2x"></i>', '<i class="fa fa-angle-right fa2x"></i>'],
+        autoHeight: true,
     });
 
     $('.active-exibition-carusel').owlCarousel({

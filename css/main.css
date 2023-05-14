@@ -21,6 +21,11 @@ body {
   position: relative;
   height: 100vh;
   max-height: 100vh;
+  /* background: url(../img/ilo.jpg) !important; 
+  background-repeat: no-repeat !important; 
+  background-position: top !important; 
+  background-size: co !important; */
+  
   /* overflow: hidden; */
 }
 
@@ -1411,7 +1416,22 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
   }
   #header #logo img {
-    max-height: 40px;
+    
+  }
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+  }
+  
+  .owl-prev {
+    margin-left: 50px;
+  }
+  
+  .owl-next {
+    margin-right: 50px;
   }
 }
 
@@ -2882,6 +2902,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .model-left p {
   color: #191919;
+}
+
+.field-img{
+  width: 100% !important;
+  height: 80% !important;
+  object-fit: cover !important;
 }
 /* .model-area {
   position: relative;
