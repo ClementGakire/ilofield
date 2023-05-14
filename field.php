@@ -373,17 +373,7 @@ if(isset($_POST['submit']))
     <div class="overlay overlay-bg"></div>
     <div class="container">
       <div class="row fullscreen d-flex align-items-center justify-content-center">
-        <div class="banner-content col-lg-7 col-md-6 ">
-          <!-- <h6 class="text-white ">the Royal Essence of Journey</h6> -->
-          <h1 class="text-white text-uppercase">
-            Choose Your Field Trip
-          </h1>
-          <!-- <p class="pt-20 pb-20 text-white">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p> -->
-          <a href="" class="primary-btn text-uppercase">Register Now</a>
-        </div>
-        <div class="col-lg-5  col-md-6 header-right">
+        <div class="col-lg-12 col-md-12 header-right">
           <h4 class="text-white pb-30">Book Your Spot Today!</h4>
           <form class="form" role="form" autocomplete="off" method="POST" action="" name="insert">
             <div class="form-group row">
@@ -404,19 +394,20 @@ if(isset($_POST['submit']))
                   </select>
                 </div>
               </div>
-              
             </div>
-            
             <div class="from-group">
-              <input class="form-control txt-field" type="email" name="email" placeholder="Email address" required>
-              <input class="form-control txt-field" type="text" name="name" placeholder="Your name" required disabled>              
-              <input class="form-control txt-field" type="tel" name="phone_number" placeholder="Phone number(Include Country Code)" disabled>
-              <input class="form-control txt-field" type="text" name="hotel" placeholder="Hotel(Where are you staying?)" required>
-              <input class="form-control txt-field" type="text" name="profession" placeholder="Nationality" required disabled>
-            </div>
-            <div class="form-group row">
-              <div class="col-md-12">
-                <input type="submit" class="btn btn-default btn-lg btn-block text-center text-uppercase" value="Confirm Your Spot Booking" name="submit">
+              <input class="form-control txt-field" type="email" id="email-filter" name="email" placeholder="Email address" required>
+              <button id="email-filter-exist" class="btn btn-default btn-lg btn-block text-center text-uppercase">Verify</button>
+              <div class="disabled" id="rest-of-form">
+                  <input class="form-control txt-field" type="text" id="fullname" name="name" placeholder="Your name" required disabled>              
+                  <input class="form-control txt-field" type="tel" id="phone_number" name="phone_number" placeholder="Phone number(Include Country Code)" disabled>
+                  <input class="form-control txt-field" type="text" id="hotle" name="hotel" placeholder="Hotel(Where are you staying?)" required>
+                  <input class="form-control txt-field" type="text" id="nationality" name="profession" placeholder="Nationality" required disabled>
+                  <div class="form-group row">
+                    <div class="col-md-12">
+                      <input type="submit" class="btn btn-default btn-lg btn-block text-center text-uppercase" value="Confirm Your Spot Booking" name="submit">
+                    </div>
+                  </div>
               </div>
             </div>
           </form>
@@ -450,19 +441,37 @@ if(isset($_POST['submit']))
   <script src="js/parallax.min.js"></script>
   <script src="js/mail-script.js"></script>
   <script src="js/main.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-23581568-13');
-
     function pickchoice(choice) {
-      document.getElementById("select-element").value = choice;
+      $('#select-element').val(choice);
+      $('#select-element').niceSelect('update');
     }
 
+    $('#email-filter-exist').on('click', function() {
+      var email = $('#email-filter').val();
+      if (email !== '') {
+        var xhr = new XMLHttpRequest();
+        xhr.addEventListener("readystatechange", function() {
+          if(this.readyState === 4) {
+            let res = JSON.parse(this.responseText);
+            if(res.data) {
+              // respinho2014@gmail.com
+              $('#email-filter-exist').addClass('disabled');
+              $('#fullname').val(res.data.firstName + ' ' + res.data.lastName);
+              $('#phone_number').val(res.data.phone);
+              $('#nationality').val(res.data.nationality)
+              $('#rest-of-form').removeClass('disabled');
+            }else{
+              alert("Your email is not registered in our system. Please register first.")
+            }
+          }
+        });
+
+        xhr.open("GET", "https://app-ilorwanda2023.rw/api/application-by-email/"+email);
+        xhr.setRequestHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.aWxvcndhbmRhMjAyMw.oUkLbDEWPkT96OeUu5W4mtIYXZBTeIgcvVaXGn4elBU");
+        xhr.send();
+      }
+      });
   </script>
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7c61f86589599cb4","version":"2023.4.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}' crossorigin="anonymous"></script>
 </body>

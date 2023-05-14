@@ -1734,6 +1734,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   bottom: 0;
 }
 
+.disabled {
+  display: none !important;
+}
+
 .banner-area {
   background: url(../img/bg.jpeg) center;
   background-size: cover;
