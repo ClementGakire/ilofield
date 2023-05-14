@@ -19,6 +19,9 @@ body {
   font-weight: 300;
   line-height: 1.625em;
   position: relative;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 ol, ul {
