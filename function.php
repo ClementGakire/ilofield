@@ -31,16 +31,33 @@
             $stmt->close();
             return $ret;
         }
-        public function getDelegates($name, $email, $nationality, $event)
+        public function getDelegates()
         {
             $stmt = $this->dbh->prepare("SELECT * FROM sideevent");
             $ret = $stmt->execute();
+            $results = $stmt->fetchAll();
             $stmt->close();
-            return $ret;
+            return $results;
         } 
-        public function getTotal($event)  
+             
+        public function TotalTrips($trip)  
         {
-            
-        }     
-    }
+                $stmt = $this->dbh->prepare("SELECT COUNT(*) as trip_count FROM trips WHERE trip = '$trip' ;");
+                $stmt->execute();
+                $stmt->bind_result($count);
+                $stmt->fetch();
+                $stmt->close();
+                return $count;
+        }
+        public function TotalLocalByTrip($trip)  
+        {
+            $stmt = $this->dbh->prepare("SELECT COUNT(*) as trip_count FROM trips WHERE trip = '$trip' AND profession = 'Rwanda'");
+            $stmt->execute();
+            $stmt->bind_result($count);
+            $stmt->fetch();
+            $stmt->close();
+            return $count;
+        }
+
+    }   
 ?>

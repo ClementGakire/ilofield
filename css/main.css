@@ -21,7 +21,11 @@ body {
   position: relative;
   height: 100vh;
   max-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.nice-select {
+  width: 100%;
 }
 
 ol, ul {

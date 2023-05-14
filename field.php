@@ -10,15 +10,28 @@ if(isset($_POST['submit']))
     $phone_number = $_POST['phone_number'];
     $hotel = $_POST['hotel'];
     $profession = $_POST['profession'];
-    $sql = $insertTrip->insert($trip, $name, $email, $phone_number, $hotel, $profession);
-    if($sql)
-    {
+
+    $totalTrip = $insertTrip->TotalTrips($trip);
+    $totalTripLoc = $insertTrip->TotalLocalByTrip($trip);
+
+    $totalAllowed = $_POST['number'];
+
+    if(($totalTrip+1) < $totalAllowed) {
+      if($profession == "Rwanda") {
+        if(($totalTripLoc/$totalAllowed)*100 < 30) {
+          $sql = $insertTrip->insert($trip, $name, $email, $phone_number, $hotel, $profession);
+          echo "<script>alert('Slot Booked');</script>";
+        }else{
+          echo "<script>alert('No available slot');</script>";
+        }
+      }else{
+        $sql = $insertTrip->insert($trip, $name, $email, $phone_number, $hotel, $profession);
         echo "<script>alert('Slot Booked');</script>";
+      }
+    }else{
+      echo "<script>alert('Slot Fully Booked');</script>";
     }
-    else
-    {
-        echo "<script>alert('Slot not Booked');</script>";
-    }
+    
 }
 ?>
 
@@ -156,7 +169,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" onclick="pickchoice('Pink Mango')" href="#home">Book a Slot Now</a>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Pink Mango', 20)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/pinkmango.png" alt="">
@@ -179,7 +192,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" onclick="pickchoice('Muhanga ICPC')" href="#home">Book a Slot Now</a>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Muhanga ICPC', 100)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/icpcmuhanga.png" alt="">
@@ -203,7 +216,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
+            <button onclick="pickchoice('Center of Excellence: Rwanda Coding Academy', 200)" class="text-uppercase primary-btn" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/rwandacodingacademy.png" alt="">
@@ -221,7 +234,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" onclick="pickchoice('IPRC Tumba')" href="#home">Book a Slot Now</a>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('IPRC Tumba', 150)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/iprc.png" alt="">
@@ -245,7 +258,7 @@ if(isset($_POST['submit']))
 
             </p>
            
-            <a class="text-uppercase primary-btn" onclick="pickchoice('Ampersand in Kigali')" href="#home">Book a Slot Now</a>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Ampersand in Kigali', 30)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/ampersand.png" alt="">
@@ -265,7 +278,7 @@ if(isset($_POST['submit']))
             -Number of people the area can receive: 300<br>
             -Accessibility: Easy (Only 6 Km from Musanze city)
             </p>
-            <a class="text-uppercase primary-btn" onclick="pickchoice('Kinigi IDP Model Village')" href="#home">Book a Slot Now</a>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Kinigi IDP Model Village', 200)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/idp.png" alt="">
@@ -287,7 +300,7 @@ if(isset($_POST['submit']))
             -Accessibility: Complicated somehow
 
             </p>
-            <a class="text-uppercase primary-btn" onclick="pickchoice('Green Gicumbi')" href="#home">Book a Slot Now</a>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Green Gicumbi', 60)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/greengicumbi.png" alt="">
@@ -305,7 +318,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" onclick="pickchoice('Gisozi Genocide Museum')" href="#home">Book a Slot Now</a>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Gisozi Genocide Museum', 20)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/gisozigenocidememorial.png" alt="">
@@ -323,7 +336,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Kigali City Tour', 20)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/kigali.jpeg" alt="">
@@ -341,7 +354,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn"  href="#home">Book a Slot Now</a>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Nyandungu Urban Waterland Eco-tourism park', 20)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/nyandungu.png" alt="">
@@ -359,7 +372,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a id="book-now" class="text-uppercase primary-btn" data-value="Conference Infrastructure (KCC & BK Arena)" href="#home">Book a Slot Now</a>
+            <button id="book-now" class="text-uppercase primary-btn" onclick="pickchoice('Conference Infrastructure (KCC & BK Arena)', 20)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/kcc.png" alt="">
@@ -379,9 +392,9 @@ if(isset($_POST['submit']))
             <div class="form-group row">
               <div class="col-md-12 wrap-left">
                 <div class="" id="default-select">
-                  <select name="trip" required id="select-element">
+                  <select class="form-control" name="trip" required id="select-element-trip">
                     <option value="" disabled selected hidden>Field Visit Location</option>
-                    <option value="Pink Mango">Pink Mango</option>
+                    <!-- <option value="Pink Mango">Pink Mango</option>
                     <option value="Muhanga ICPC">Muhanga ICPC</option>
                     <option value="Center of Excellence: Rwanda Coding Academy">Center of Excellence: Rwanda Coding Academy</option>
                     <option value="IPRC Tumba">IPRC Tumba</option>
@@ -390,7 +403,7 @@ if(isset($_POST['submit']))
                     <option value="Gisozi Genocide Museum">Gisozi Genocide Museum</option>
                     <option value="Kigali City Tour">Kigali City Tour</option>
                     <option value="Nyandungu Urban Waterland Eco-tourism park">Nyandungu Urban Waterland Eco-tourism park</option>
-                    <option value="Conference Infrastructure (KCC & BK Arena)">Conference Infrastructure (KCC & BK Arena)</option>
+                    <option value="Conference Infrastructure (KCC & BK Arena)">Conference Infrastructure (KCC & BK Arena)</option> -->
                   </select>
                 </div>
               </div>
@@ -399,13 +412,14 @@ if(isset($_POST['submit']))
               <input class="form-control txt-field" type="email" id="email-filter" name="email" placeholder="Email address" required>
               <button id="email-filter-exist" class="btn btn-default btn-lg btn-block text-center text-uppercase">Verify</button>
               <div class="disabled" id="rest-of-form">
-                  <input class="form-control txt-field" type="text" id="fullname" name="name" placeholder="Your name" required disabled>              
-                  <input class="form-control txt-field" type="tel" id="phone_number" name="phone_number" placeholder="Phone number(Include Country Code)" disabled>
+                  <input class="form-control txt-field" type="text" id="fullname" name="name" placeholder="Your name" required readonly>              
+                  <input class="form-control txt-field" type="tel" id="phone_number" name="phone_number" placeholder="Phone number(Include Country Code)" readonly>
                   <input class="form-control txt-field" type="text" id="hotle" name="hotel" placeholder="Hotel(Where are you staying?)" required>
-                  <input class="form-control txt-field" type="text" id="nationality" name="profession" placeholder="Nationality" required disabled>
+                  <input class="form-control txt-field" type="text" id="nationality" name="profession" placeholder="Nationality" required readonly>
+                  <input type="hidden" name="number" id="submit-formulla" value=""/>
                   <div class="form-group row">
                     <div class="col-md-12">
-                      <input type="submit" class="btn btn-default btn-lg btn-block text-center text-uppercase" value="Confirm Your Spot Booking" name="submit">
+                      <input type="submit" class="btn btn-default btn-lg btn-block text-center text-uppercase"  value="Confirm Booking" name="submit">
                     </div>
                   </div>
               </div>
@@ -435,17 +449,30 @@ if(isset($_POST['submit']))
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
-  <script src="js/jquery.nice-select.min.js"></script>
+  <!-- <script src="js/jquery.nice-select.min.js"></script> -->
   <script src="js/waypoints.min.js"></script>
   <script src="js/jquery.counterup.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/mail-script.js"></script>
   <script src="js/main.js"></script>
   <script>
-    function pickchoice(choice) {
-      $('#select-element').val(choice);
-      $('#select-element').niceSelect('update');
+    function pickchoice(choice, number) {
+      // Remove all existing options except the selected one
+      // $('#select-element-trip option').remove();
+      
+      // Update the selected option with the new value
+      $('#select-element-trip').append(`<option selected value="${choice}">${choice}</option>`);
+      
+      // Update the form input with the number value
+      $('#submit-formulla').val(number);
+
+      // Scroll to a div element with ID "myDiv"
+      $('html, body').animate({
+          scrollTop: $('#home').offset().top
+      }, 1000);
+
     }
+
 
     $('#email-filter-exist').on('click', function() {
       var email = $('#email-filter').val();
@@ -471,7 +498,7 @@ if(isset($_POST['submit']))
         xhr.setRequestHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.aWxvcndhbmRhMjAyMw.oUkLbDEWPkT96OeUu5W4mtIYXZBTeIgcvVaXGn4elBU");
         xhr.send();
       }
-      });
+    });
   </script>
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7c61f86589599cb4","version":"2023.4.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}' crossorigin="anonymous"></script>
 </body>

@@ -12,9 +12,9 @@ $(document).ready(function(){
 	$(".fullscreen").css("height", window_height)
 	$(".fitscreen").css("height", fitscreen);
 
-     if(document.getElementById("default-select")){
-          $('select').niceSelect();
-    };
+    //  if(document.getElementById("default-select")){
+    //       $('select').niceSelect();
+    // };
 
     $('.img-pop-up').magnificPopup({
         type: 'image',
