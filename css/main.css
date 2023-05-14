@@ -1667,6 +1667,25 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
   position: relative;
 }
+.primary-btn-side {
+  background-color: #E66F23;
+  line-height: 42px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+}
 
 .primary-btn:focus {
   outline: none;
@@ -2008,7 +2027,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .model-area .owl-dots {
   text-align: center;
   bottom: 5px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   width: 100%;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;

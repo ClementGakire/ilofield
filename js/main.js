@@ -175,10 +175,14 @@ $(document).ready(function(){
         items:1,
         loop:true,
         margin:30,
-        dots: true
+        dots: true,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left fa-2x"></i>', '<i class="fa fa-angle-right fa-2x"></i>'],
     });
 
     $('.active-exibition-carusel').owlCarousel({
+        nav: true,
+        navText: ['<i class="fas fa-angle-left"></i>', '<i class="fab fa-angle-right"></i>'],
         items:3,
         margin:30,
         autoplay:true,

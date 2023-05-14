@@ -132,7 +132,7 @@ if(isset($_POST['submit']))
             Book Your Slot
           </h1>
           <a href="field.php" class="primary-btn text-uppercase">Field Trip</a>
-          <a href="side-event.php" class="primary-btn text-uppercase">Side Event</a>
+          <a href="side-event.php" class="primary-btn-side text-uppercase">Side Event</a>
         </div>
       </div>
     </div>
@@ -150,10 +150,10 @@ if(isset($_POST['submit']))
     </div>
   </footer>
   <script src="js/vendor/jquery-2.2.4.min.js"></script>
-  <script src="../../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-  <script src="../../../code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/easing.min.js"></script>
   <script src="js/hoverIntent.js"></script>
   <script src="js/superfish.min.js"></script>
@@ -167,15 +167,5 @@ if(isset($_POST['submit']))
   <script src="js/parallax.min.js"></script>
   <script src="js/mail-script.js"></script>
   <script src="js/main.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-23581568-13');
-  </script>
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7c61f86589599cb4","version":"2023.4.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>

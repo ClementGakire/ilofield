@@ -32,14 +32,17 @@ if(isset($_POST['submit']))
   <meta name="keywords" content="">
   <meta charset="UTF-8">
   <title>Field Visit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- other CSS files -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/linearicons.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-fxSeDGAKxPXjX2c5g5Ri3EAhVG/5Hn6vKd8Swp1IPMxG6nRH9XUv4DjdtB6+jZn6iGh3/lOo3p8xatx6zO1I5Q==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/nice-select.css">
   <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" href="../../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/main.css">
   <script nonce="2b08652c-5a00-46de-b293-4fb0d7c3a425">
@@ -153,7 +156,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" href="#">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/pinkmango.png" alt="">
@@ -176,7 +179,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" href="#">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/icpcmuhanga.png" alt="">
@@ -200,7 +203,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" href="#">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/rwandacodingacademy.png" alt="">
@@ -218,7 +221,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" href="#">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/iprc.png" alt="">
@@ -242,7 +245,7 @@ if(isset($_POST['submit']))
 
             </p>
            
-            <a class="text-uppercase primary-btn" href="#">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/ampersand.png" alt="">
@@ -262,7 +265,7 @@ if(isset($_POST['submit']))
             -Number of people the area can receive: 300<br>
             -Accessibility: Easy (Only 6 Km from Musanze city)
             </p>
-            <a class="text-uppercase primary-btn" href="#">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/idp.png" alt="">
@@ -284,7 +287,7 @@ if(isset($_POST['submit']))
             -Accessibility: Complicated somehow
 
             </p>
-            <a class="text-uppercase primary-btn" href="#">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/greengicumbi.png" alt="">
@@ -302,7 +305,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" href="#">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/gisozigenocidememorial.png" alt="">
@@ -320,7 +323,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" href="#">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/kigali.jpeg" alt="">
@@ -338,7 +341,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" href="#">Book a Slot Now</a>
+            <a class="text-uppercase primary-btn" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/nyandungu.png" alt="">
@@ -356,7 +359,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <a class="text-uppercase primary-btn" href="#">Book a Slot Now</a>
+            <a id="book-now" class="text-uppercase primary-btn" data-value="Conference Infrastructure (KCC & BK Arena)" href="#home">Book a Slot Now</a>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid" src="img/kcc.png" alt="">
@@ -386,7 +389,7 @@ if(isset($_POST['submit']))
             <div class="form-group row">
               <div class="col-md-12 wrap-left">
                 <div class="default-select" id="default-select">
-                  <select name="trip" required>
+                  <select name="trip" required id="select-element">
                     <option value="" disabled selected hidden>Field Visit Location</option>
                     <option value="Pink Mango">Pink Mango</option>
                     <option value="Muhanga ICPC">Muhanga ICPC</option>
@@ -409,7 +412,7 @@ if(isset($_POST['submit']))
               <input class="form-control txt-field" type="email" name="email" placeholder="Email address" required>
               <input class="form-control txt-field" type="tel" name="phone_number" placeholder="Phone number(Include Country Code)" required>
               <input class="form-control txt-field" type="text" name="hotel" placeholder="Hotel(Where are you staying?)" required>
-              <input class="form-control txt-field" type="text" name="profession" placeholder="Profession" required>
+              <input class="form-control txt-field" type="text" name="profession" placeholder="Nationality" required>
             </div>
             <div class="form-group row">
               <div class="col-md-12">
@@ -434,10 +437,6 @@ if(isset($_POST['submit']))
     </div>
   </footer>
   <script src="js/vendor/jquery-2.2.4.min.js"></script>
-  <script src="../../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-  <script src="../../../code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/easing.min.js"></script>
   <script src="js/hoverIntent.js"></script>
   <script src="js/superfish.min.js"></script>
