@@ -32,5 +32,13 @@
             $stmt->close();
             return $ret;
         }
+        public function getDelegates($name, $email, $nationality, $event)
+        {
+            $stmt = $this->dbh->prepare("SELECT * FROM sideevent");
+            $ret = $stmt->execute();
+            $stmt->close();
+            return $ret;
+        }
+        
     }
 ?>

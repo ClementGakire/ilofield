@@ -39,7 +39,7 @@ if(isset($_POST['submit']))
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/nice-select.css">
   <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" href="../../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/main.css">
   <script nonce="2b08652c-5a00-46de-b293-4fb0d7c3a425">
