@@ -388,7 +388,7 @@ if(isset($_POST['submit']))
           <form class="form" role="form" autocomplete="off" method="POST" action="" name="insert">
             <div class="form-group row">
               <div class="col-md-12 wrap-left">
-                <div class="default-select" id="default-select">
+                <div class="" id="default-select">
                   <select name="trip" required id="select-element">
                     <option value="" disabled selected hidden>Field Visit Location</option>
                     <option value="Pink Mango">Pink Mango</option>
