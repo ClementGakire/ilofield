@@ -31,15 +31,19 @@
             $stmt->close();
             return $ret;
         }
-        public function getDelegates()
+        public function getSideEvent()
         {
-            $stmt = $this->dbh->prepare("SELECT * FROM sideevent");
-            $ret = $stmt->execute();
-            $results = $stmt->fetchAll();
-            $stmt->close();
-            return $results;
-        } 
-             
+            $result = mysqli_query($this->dbh, "select * from sideevent");
+            return $result;
+        }
+        
+        public function getTrips()
+        {
+            $result = mysqli_query($this->dbh, "select * from trips");
+            return $result;
+        }
+
+           
         public function TotalTrips($trip)  
         {
                 $stmt = $this->dbh->prepare("SELECT COUNT(*) as trip_count FROM trips WHERE trip = '$trip' ;");
