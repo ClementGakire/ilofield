@@ -156,7 +156,7 @@ if(isset($_POST['submit']))
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20">Pink Mango</h4>
-              <h2>20<span>Slots Left</span></h2>
+              <h2>20<span>Slots</span></h2>
             </div>
             <p>
               -Location: Kigali/Free Zone<br>
@@ -169,7 +169,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('Pink Mango', 20)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Pink Mango', 21)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/pinkmango.png" alt="">
@@ -179,7 +179,7 @@ if(isset($_POST['submit']))
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20">Muhanga ICPC</h4>
-              <h2>100<span>Slots Left</span></h2>
+              <h2>100<span>Slots</span></h2>
             </div>
             <p>
             -Location: Muhanga  District<br>
@@ -192,7 +192,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('Muhanga ICPC', 100)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Muhanga ICPC', 101)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/icpcmuhanga.png" alt="">
@@ -202,7 +202,7 @@ if(isset($_POST['submit']))
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20">Center of Excellence: Rwanda Coding Academy</h4>
-              <h2>200<span>Slots Left</span></h2>
+              <h2>200<span>Slots</span></h2>
             </div>
             <p>
               -Location: Nyabihu  District<br>
@@ -216,7 +216,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <button onclick="pickchoice('Center of Excellence: Rwanda Coding Academy', 200)" class="text-uppercase primary-btn" href="#home">Book a Slot Now</button>
+            <button onclick="pickchoice('Center of Excellence: Rwanda Coding Academy', 201)" class="text-uppercase primary-btn" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/rwandacodingacademy.png" alt="">
@@ -226,7 +226,7 @@ if(isset($_POST['submit']))
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20">IPRC Tumba</h4>
-              <h2>150<span>Slots Left</span></h2>
+              <h2>150<span>Slots</span></h2>
             </div>
             <p>
             The IPRC TUMBA is a higher education institution and training center in Rwanda that was established in 2007 and officially inaugurated in 2008 by the Minister of Education and the President of Japan International Cooperation Agency. Its purpose is to produce higher technicians to benefit Rwanda and the region's economy.
@@ -234,7 +234,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('IPRC Tumba', 150)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('IPRC Tumba', 151)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/iprc.png" alt="">
@@ -244,7 +244,7 @@ if(isset($_POST['submit']))
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20">Ampersand in Kigali</h4>
-              <h2>30<span>Slots Left</span></h2>
+              <h2>30<span>Slots</span></h2>
             </div>
             <p>
               -Location: Kicukiro District<br>
@@ -258,7 +258,7 @@ if(isset($_POST['submit']))
 
             </p>
            
-            <button class="text-uppercase primary-btn" onclick="pickchoice('Ampersand in Kigali', 30)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Ampersand in Kigali', 31)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right" field-img>
             <img class="img-fluid" src="img/ampersand.png" alt="">
@@ -268,7 +268,7 @@ if(isset($_POST['submit']))
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20">Kinigi IDP Model Village</h4>
-              <h2>200<span>Slots Left</span></h2>
+              <h2>200<span>Slots</span></h2>
             </div>
             <p>
             -Location: Musanze  District<br>
@@ -278,7 +278,7 @@ if(isset($_POST['submit']))
             -Number of people the area can receive: 300<br>
             -Accessibility: Easy (Only 6 Km from Musanze city)
             </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('Kinigi IDP Model Village', 200)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Kinigi IDP Model Village', 201)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/idp.png" alt="">
@@ -288,7 +288,7 @@ if(isset($_POST['submit']))
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20">Green Gicumbi</h4>
-              <h2>60<span>Slots Left</span></h2>
+              <h2>60<span>Slots</span></h2>
             </div>
             <p>
             -Location: Gicumbi District<br>
@@ -300,7 +300,7 @@ if(isset($_POST['submit']))
             -Accessibility: Complicated somehow
 
             </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('Green Gicumbi', 60)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Green Gicumbi', 61)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/greengicumbi.png" alt="">
@@ -310,7 +310,7 @@ if(isset($_POST['submit']))
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20">Gisozi Genocide Museum</h4>
-              <h2>20<span>Slots Left</span></h2>
+              <h2>20<span>Slots</span></h2>
             </div>
             <p>
             The Kigali Genocide Memorial commemorates the 1994 Rwandan genocide. The remains of over 250,000 people are interred there. There is a visitor centre for students and others wishing to understand the events leading up to the genocide that occurred in Rwanda in 1994.
@@ -318,7 +318,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('Gisozi Genocide Museum', 20)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Gisozi Genocide Museum', 21)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/gisozigenocidememorial.png" alt="">
@@ -328,7 +328,7 @@ if(isset($_POST['submit']))
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20">Kigali City Tour</h4>
-              <h2>20<span>Slots Left</span></h2>
+              <h2>20<span>Slots</span></h2>
             </div>
             <p>
             Kigali is the capital city of Rwanda, roughly in the center of the country. It sprawls across numerous hills, ridges and valleys, and has a vibrant restaurant and nightlife scene. 
@@ -336,7 +336,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('Kigali City Tour', 20)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Kigali City Tour', 21)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/kigali.jpeg" alt="">
@@ -346,7 +346,7 @@ if(isset($_POST['submit']))
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20">Nyandungu Urban Waterland Eco-tourism park</h4>
-              <h2>20<span>Slots Left</span></h2>
+              <h2>20<span>Slots</span></h2>
             </div>
             <p>
             Nyandungu Urban Wetland Ecotourism park is a 120 hectares of surface area, Rwandan tourism park located between Gasabo and Kicukiro Districts which allows sustainable travel of people to enjoy natural areas and wild animals in Nyandungu Valley.
@@ -354,7 +354,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('Nyandungu Urban Waterland Eco-tourism park', 20)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Nyandungu Urban Waterland Eco-tourism park', 21)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/nyandungu.png" alt="">
@@ -364,7 +364,7 @@ if(isset($_POST['submit']))
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20">Conference Infrastructure (KCC & BK Arena)</h4>
-              <h2>20<span>Slots Left</span></h2>
+              <h2>20<span>Slots</span></h2>
             </div>
             <p>
             Kigali, the capital city of Rwanda, is home to several conference and exhibition infrastructures that host a variety of events and conferences throughout the year.
@@ -372,7 +372,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <button id="book-now" class="text-uppercase primary-btn" onclick="pickchoice('Conference Infrastructure (KCC & BK Arena)', 20)" href="#home">Book a Slot Now</button>
+            <button id="book-now" class="text-uppercase primary-btn" onclick="pickchoice('Conference Infrastructure (KCC & BK Arena)', 21)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/kcc.png" alt="">
