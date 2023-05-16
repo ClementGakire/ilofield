@@ -310,7 +310,7 @@ if(isset($_POST['submit']))
           <div class="col-lg-6 model-left">
             <div class="title justify-content-between d-flex">
               <h4 class="mt-20">Gisozi Genocide Museum</h4>
-              <h2>20<span>Slots</span></h2>
+              <h2>40<span>Slots</span></h2>
             </div>
             <p>
             The Kigali Genocide Memorial commemorates the 1994 Rwandan genocide. The remains of over 250,000 people are interred there. There is a visitor centre for students and others wishing to understand the events leading up to the genocide that occurred in Rwanda in 1994.
@@ -318,7 +318,7 @@ if(isset($_POST['submit']))
             <p>
               
             </p>
-            <button class="text-uppercase primary-btn" onclick="pickchoice('Gisozi Genocide Museum', 21)" href="#home">Book a Slot Now</button>
+            <button class="text-uppercase primary-btn" onclick="pickchoice('Gisozi Genocide Museum', 41)" href="#home">Book a Slot Now</button>
           </div>
           <div class="col-lg-6 model-right">
             <img class="img-fluid field-img" src="img/gisozigenocidememorial.png" alt="">
