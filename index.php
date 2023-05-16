@@ -127,12 +127,13 @@ if(isset($_POST['submit']))
     <div class="overlay overlay-bg"></div>
     <div class="container">
       <div class="row fullscreen d-flex align-items-center justify-content-center">
-        <div class="banner-content col-lg-8 col-md-6 ">
+        <div class="banner-content col-lg-12 col-md-6 ">
           <h1 class="text-white text-uppercase" style="margin: 27% auto;">
             Book Your Slot
           </h1>
           <a href="field.php" class="primary-btn text-uppercase">Field Trip</a>
-          <a href="side-event.php" class="primary-btn-side text-uppercase">Side Event</a>
+          <a href="img/Showcases1.pptx" download="Showcases1.pptx" class="primary-btn-side text-uppercase m-2"> DOWNLOAD FIELD TRIP Program</a>
+          <a href="side-event.php" class="primary-btn text-uppercase">Side Event</a>
           <a href="img/program.pdf" download="program.pdf" class="primary-btn-side text-uppercase m-2">Download Program</a>
 
         </div>
