@@ -128,7 +128,7 @@ if(isset($_POST['submit']))
     <div class="container">
       <div class="row fullscreen d-flex align-items-center justify-content-center">
         <div class="banner-content col-lg-12 col-md-6 ">
-          <h1 class="text-white text-uppercase" style="margin: 27% auto;">
+          <h1 class="text-white text-uppercase" style="margin: 15% auto;">
             Book Your Slot
           </h1>
           <a href="field.php" class="primary-btn text-uppercase">Field Trip</a>
