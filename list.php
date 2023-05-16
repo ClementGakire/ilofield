@@ -100,6 +100,7 @@ $fetchdata = new DB_con();
         <tbody>
             <?php                
               $sql=$fetchdata->getSideEvent();
+              
               while($row=mysqli_fetch_array($sql))
               {    
             ?>
